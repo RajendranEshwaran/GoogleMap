@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_explore"
+        android:icon="@drawable/ic_edit_location_black_24dp"
+        android:title="Explore" />
+    <item
+        android:id="@+id/bottm_nav_commute"
+        android:icon="@drawable/ic_business_black_24dp"
+        android:title="Commute" />
+    <item
+        android:id="@+id/bottom_nav_foryou"
+        android:icon="@drawable/ic_assistant_black_24dp"
+        android:title="For you" />
+</menu>
