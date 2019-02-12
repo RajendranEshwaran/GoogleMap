@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/side_navi"
+        android:icon="@drawable/ic_dehaze_black_24dp"
+        android:title="Item" />
+    <item
+        android:id="@+id/mic_navi"
+        android:icon="@drawable/ic_mic_black_24dp"
+        android:title="Item" />
+</menu>

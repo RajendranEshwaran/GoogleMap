@@ -3,17 +3,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clickable="true"
+    android:touchscreenBlocksFocus="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment_Explore">
 
     <!-- TODO: Update blank fragment layout -->
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <com.google.android.gms.maps.MapView
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
-         android:id="@+id/mapView">
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:touchscreenBlocksFocus="true">
 
-     </com.google.android.gms.maps.MapView> -->
+        </com.google.android.gms.maps.MapView>
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="20dp">
 
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/explorer_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/ic_dehaze_black_24dp" />
+
+                <EditText
+                    android:id="@+id/search_location_txt"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:text="Search Location "
+                    android:textAlignment="textStart"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+
+                    android:background="@drawable/ic_mic_black_24dp" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/target_FLButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="193dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:src="@drawable/targetlocation" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/go_FLButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="105dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:src="@drawable/gotarget1"
+           />
+
+    </RelativeLayout>
 </FrameLayout>
